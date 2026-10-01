@@ -1,1 +1,1 @@
-# portfolio-b2b
+Projeto da disciplina laboratório web.

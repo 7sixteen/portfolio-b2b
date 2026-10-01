@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veste — Moda & Estilo</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <!-- Font Awesome para Ícones das Redes Sociais -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Fontes: Playfair Display (títulos) + Jost (texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- 1. Logo -->
+        <a href="#" class="logo">veste</a>
+
+        <!-- Botão Hambúrguer (Aparece apenas no Mobile) -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+          <img src="./src/icons/menu.svg" alt="Menu" />
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <!-- 2. Menu de Links -->
+          <ul class="nav-links">
+            <li><a href="#home">Sobre nós</a></li>
+            <li><a href="#about">Coleções</a></li>
+            <li><a href="#services">Ateliê</a></li>
+            <li><a href="#contact">Editorial</a></li>
+          </ul>
+
+          <!-- 3. Ações de Login e Botão -->
+          <div class="nav-actions">
+            <a href="#login" class="btn-login">Entrar</a>
+            <a href="#join" class="btn-join">Comprar Agora</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Seção Hero -->
+      <section class="hero">
+        <div class="hero-container">
+          <!-- Conteúdo de Texto -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Vista <span class="highlight-line-bottom">Bem</span>
+              <span class="highlight-purple">&amp;</span>
+              <span class="highlight-line-top">Viva Melhor</span>
+            </h1>
+
+            <p class="hero-description">
+              Descubra peças atemporais feitas com tecidos nobres e acabamento
+              artesanal. Do básico do dia a dia ao alfaiataria sob medida, a
+              Veste conecta você à moda que dura além das estações.
+            </p>
+
+            <!-- Botões de Ação -->
+            <div class="hero-buttons">
+              <a href="#join" class="btn btn-primary">Comprar Agora</a>
+              <a href="#demo" class="btn btn-outline">Ver Coleção</a>
+            </div>
+          </div>
+
+          <!-- Imagem/Mockup da Aplicação -->
+          <div class="hero-image">
+            <img src="./src/img/hero-mockup.svg" alt="Demonstração do App Web" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 1: Empresas Parceiras -->
+      <section class="companies">
+        <div class="companies-container">
+          <h2 class="companies-title">Marcas que vestem conosco</h2>
+
+          <div class="companies-grid">
+            <div class="company-item">
+              <img src="./src/img/logo-atelier.svg" alt="Atelier Nord" />
+              <span>Atelier Nord</span>
+            </div>
+            <div class="company-item">
+              <img src="./src/img/logo-sartoria.svg" alt="Sartoria Vellure" />
+              <span>Sartoria Vellure</span>
+            </div>
+            <div class="company-item">
+              <img src="./src/img/logo-linho.svg" alt="Linho & Co." />
+              <span>Linho &amp; Co.</span>
+            </div>
+            <div class="company-item">
+              <img src="./src/img/logo-vellure.svg" alt="Casa Lumière" />
+              <span>Casa Lumière</span>
+            </div>
+            <div class="company-item">
+              <img src="./src/img/logo-trico.svg" alt="Tricô Serrano" />
+              <span>Tricô Serrano</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 2: Discover -->
+      <section class="discover">
+        <div class="discover-container">
+          <!-- Imagem/Ilustração -->
+          <div class="discover-image">
+            <img src="./src/img/formas-geometricas.svg" alt="Formas geométricas" />
+          </div>
+
+          <!-- Conteúdo de Texto -->
+          <div class="discover-content">
+            <span class="discover-tag">COLEÇÕES</span>
+            <h2 class="discover-title">
+              <span class="purple-text">Peças</span>
+              <span class="boxed-text">sem prazo</span>
+              de validade no seu guarda-roupa
+            </h2>
+            <p class="discover-description">
+              Cada coleção nasce de tecidos certificados e modelagem estudada.
+              Monte looks versáteis que transitam do escritório à noite, com
+              qualidade que atravessa as estações.
+            </p>
+            <a href="#discover" class="discover-link">
+              Explorar Coleção
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Powerful / Ferramentas -->
+      <section class="tools">
+        <div class="tools-container">
+          <!-- Imagem/Mockup da Aplicação -->
+          <div class="tools-image">
+            <img
+              src="./src/img/hero-mockup.svg"
+              alt="Demonstração das ferramentas da aplicação"
+            />
+          </div>
+
+          <!-- Conteúdo de Texto -->
+          <div class="tools-content">
+            <span class="tools-tag">
+              <span class="boxed-tag">ATELIÊ</span>
+            </span>
+            <h2 class="tools-title">Todos os serviços do nosso ateliê</h2>
+            <p class="tools-description">
+              Alfaiataria sob medida, ajustes finos, consultoria de imagem e
+              personalização de peças. Do caimento perfeito ao detalhe bordado,
+              cuidamos de cada etapa da sua peça.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Customers / AI Kit -->
+      <section class="customers">
+        <div class="customers-container">
+          <!-- Imagem/Ilustração Abstrata -->
+          <div class="customers-image">
+            <img
+              src="./src/img/ai-shapes.svg"
+              alt="Formas geométricas abstratas de inteligência artificial"
+            />
+          </div>
+
+          <!-- Conteúdo de Texto -->
+          <div class="customers-content">
+            <span class="customers-tag">CLIENTES</span>
+            <h2 class="customers-title">
+              <span class="purple-text">Estilo</span>
+              <span class="pink-box"><span class="highlight">sob</span> medida</span>
+              para cada ocasião da sua vida
+            </h2>
+            <p class="customers-description">
+              Nossa consultoria de imagem analisa seu biotipo, rotina e gosto
+              pessoal para montar looks exclusivos. Vista-se com confiança em
+              reuniões, eventos e no dia a dia.
+            </p>
+            <a href="#targeting" class="customers-link">
+              Como funciona a consultoria
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Speed -->
+      <section class="speed">
+        <div class="speed-container">
+          <!-- Imagem/Mockup da Aplicação -->
+          <div class="speed-image">
+            <img
+              src="./src/img/hero-mockup.svg"
+              alt="Demonstração da interface fluida e sem interrupções"
+            />
+          </div>
+
+          <!-- Conteúdo de Texto -->
+          <div class="speed-content">
+            <span class="speed-tag">MODA CIRCULAR</span>
+            <h2 class="speed-title">Compre menos, vista melhor</h2>
+            <p class="speed-description">
+              Peças feitas para durar, com programa de reparos vitalício e
+              revenda de itens em segunda mão. Moda consciente sem abrir mão do
+              estilo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Testimonials / Partners -->
+      <section class="testimonials">
+        <div class="testimonials-container">
+          <!-- Header da Seção -->
+          <div class="testimonials-header">
+            <h2 class="testimonials-title">
+              Nossos clientes. Nossos amigos.
+              <span class="purple-highlight">Eles nos amam.</span>
+            </h2>
+            <p class="testimonials-subtitle">
+              Veja o que dizem quem trocou o fast fashion por peças atemporais
+              feitas para durar gerações.
+            </p>
+          </div>
+
+          <!-- Container dos Cards (JS vai popular aqui) -->
+          <div class="testimonials-carousel-wrapper">
+            <div class="testimonials-cards" id="testimonials-cards">
+              <!-- Os cards serão inseridos dinamicamente aqui -->
+            </div>
+          </div>
+
+          <!-- Botões do Carrossel -->
+          <div class="testimonials-controls">
+            <button class="carousel-btn" id="prev-btn" aria-label="Depoimento anterior">
+              <span class="arrow">&larr;</span> Prev
+            </button>
+            <button class="carousel-btn" id="next-btn" aria-label="Próximo depoimento">
+              Next <span class="arrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Eventos Próximos -->
+      <section class="events-section">
+        <div class="events-container">
+          <!-- Cabeçalho da Seção -->
+          <div class="events-header">
+            <h2 class="events-title">Eventos de moda perto de você</h2>
+            <a href="#" class="explore-link">
+              Explorar Eventos <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Grid de Cards de Eventos -->
+          <div class="events-grid">
+            <!-- Card 1 -->
+            <article class="event-card">
+              <div class="card-image-wrapper">
+                <img src="./src/img/event-1.svg" alt="Desfile Primavera" class="card-image" />
+                <span class="card-badge">Desfile</span>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Desfile</span>
+                <h3 class="card-title">Primavera no Boulevard</h3>
+                <a href="#" class="buy-tickets-link">
+                  Garantir Entrada <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="event-card">
+              <div class="card-image-wrapper">
+                <img src="./src/img/event-2.svg" alt="Feira Vintage" class="card-image" />
+                <span class="card-badge">Feira</span>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Feira</span>
+                <h3 class="card-title">Feira Vintage &amp; Cores</h3>
+                <a href="#" class="buy-tickets-link">
+                  Garantir Entrada <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="event-card">
+              <div class="card-image-wrapper">
+                <img src="./src/img/event-3.svg" alt="Workshop de Estilo" class="card-image" />
+                <span class="card-badge">Workshop</span>
+              </div>
+              <div class="card-content">
+                <span class="card-category">Workshop</span>
+                <h3 class="card-title">Workshop de Guarda-Roupa</h3>
+                <a href="#" class="buy-tickets-link">
+                  Garantir Entrada <span class="arrow">&rarr;</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Grid Principal (Logo + 4 Colunas) -->
+        <div class="footer-grid">
+          <!-- Marca / Logo -->
+          <div class="footer-brand">
+            <a href="#" class="brand-logo">veste</a>
+          </div>
+
+          <!-- Coluna 1: Loja -->
+          <div class="footer-column">
+            <h4 class="column-title">LOJA</h4>
+            <ul class="column-list">
+              <li><a href="#">Novidades</a></li>
+              <li><a href="#">Coleções</a></li>
+              <li><a href="#">Essenciais</a></li>
+              <li><a href="#">Presentes</a></li>
+              <li><a href="#">Outlet</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Serviços -->
+          <div class="footer-column">
+            <h4 class="column-title">SERVIÇOS</h4>
+            <ul class="column-list">
+              <li><a href="#">Sob medida</a></li>
+              <li><a href="#">Ajustes</a></li>
+              <li><a href="#">Consultoria de imagem</a></li>
+              <li><a href="#">Assinatura</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Ajuda -->
+          <div class="footer-column">
+            <h4 class="column-title">AJUDA</h4>
+            <ul class="column-list">
+              <li><a href="#">Guia de medidas</a></li>
+              <li><a href="#">Trocas e devoluções</a></li>
+              <li><a href="#">Cuidados com peças</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Marca -->
+          <div class="footer-column">
+            <h4 class="column-title">MARCA</h4>
+            <ul class="column-list">
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Imprensa</a></li>
+              <li><a href="#">Sustentabilidade</a></li>
+              <li><a href="#">Carreiras</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Linha Divisória -->
+        <hr class="footer-divider" />
+
+        <!-- Sub-rodapé (Copyright + Redes Sociais) -->
+        <div class="footer-bottom">
+          <p class="copyright">© 2026 Veste Ltda. Todos os direitos reservados.</p>
+          <div class="social-links">
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
